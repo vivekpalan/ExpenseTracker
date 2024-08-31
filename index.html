@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="expense-tracker">
+        <div class="tracker-head flex">
+          <h1>Expense Tracker</h1>
+          <h2 class="balance">Rs. <span class="balance-amt">0</span></h2>
+          <h3>Your Balance</h3>
+          <h3 class="transactions">Transactions</h3>
+        </div>
+
+        <div class="tracker-body">
+          <ul class="list-items">
+            <!-- <li class="open">
+              <div class="content">
+                <span class="text-desc"> Books</span>
+                 <span>- Rs 200</span>
+              </div>
+              <div class="icon-container">
+                <img src="./icons/pen.svg" alt="" />
+                <img src="./icons/trash.svg" alt="" />
+              </div>
+            </li> -->
+            <!-- <li>Income <span>+ Rs 3000</span></li>
+            <li>Internet Bills <span>- Rs 500</span></li>
+            <li>Grocery <span>- Rs 1000</span></li> -->
+          </ul>
+        </div>
+
+        <div class="tracker-calculator">
+          <h3>Add Transactions</h3>
+          <form action="#">
+            <div class="description">
+              <label for="name">Text</label>
+              <input type="text" class="desc" placeholder="Enter Description" />
+            </div>
+
+            <div class="amount-input">
+              <label for="amount">Amount</label>
+              <input
+                type="number"
+                name="amt"
+                id="amount"
+                placeholder="Enter Amount"
+              />
+            </div>
+          </form>
+
+          <div class="button-wrapper">
+            <button class="earnings">
+              Rs &nbsp;<span class="earn-amt-desc"> 0 </span><br />Earnings
+            </button>
+            <button class="expenses">
+              Rs &nbsp;<span class="exp-amt-desc"> 0</span> <br />Expense
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="app.js"></script>
+  </body>
+</html>
