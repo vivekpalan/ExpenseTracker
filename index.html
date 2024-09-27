@@ -7,8 +7,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="main">
-      <div class="expense-tracker">
+    <div id="main" class="flex-column">
+
+        <div class="expense__tracker flex-column">
+          <div class="balance__header">
+            <h2 class="balance">Rs. <span class="balance-amt">0</span></h2>
+          </div>
+
+          <div class="transactions flex-column">
+            <h5>Transactions</h5>
+            <ul class="flex-column list__container list-items"  >
+            </ul>
+          </div>
+
+          <div class="pop__up flex-column">
+            <form action="#" class="form__container flex">
+              <div class="description">
+                <input type="text" class="desc" placeholder="Enter Description" />
+              </div>
+  
+              <div class="amount-input">
+                <input
+                  type="number"
+                  name="amt"
+                  id="amount"
+                  placeholder="Enter Amount"
+                />
+              </div>
+            </form>
+            <div class="button__wrapper flex">
+              <button class="earnings">
+                Rs &nbsp;<span class="earn-amt-desc"> 0 </span><br />Earnings
+              </button>
+              <button class="expenses">
+                Rs &nbsp;<span class="exp-amt-desc"> 0</span> <br />Expense
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+       
+
+    
+        
+ 
+
+
+
+
+
+
+
+
+        <!-- <div class="tracker-head flex">
+          <h1>Expense Tracker</h1>
+          <h2 class="balance">Rs. <span class="balance-amt">0</span></h2>
+          <h3>Your Balance</h3>
+          <h3 class="transactions">Transactions</h3>
+        </div> -->
+
+
+
+
+
+
+
+      
+      <!-- <div class="expense-tracker">
         <div class="tracker-head flex">
           <h1>Expense Tracker</h1>
           <h2 class="balance">Rs. <span class="balance-amt">0</span></h2>
@@ -18,7 +85,7 @@
 
         <div class="tracker-body">
           <ul class="list-items">
-            <!-- <li class="open">
+            <li class="open">
               <div class="content">
                 <span class="text-desc"> Books</span>
                  <span>- Rs 200</span>
@@ -27,10 +94,10 @@
                 <img src="./icons/pen.svg" alt="" />
                 <img src="./icons/trash.svg" alt="" />
               </div>
-            </li> -->
-            <!-- <li>Income <span>+ Rs 3000</span></li>
+            </li>
+            <li>Income <span>+ Rs 3000</span></li>
             <li>Internet Bills <span>- Rs 500</span></li>
-            <li>Grocery <span>- Rs 1000</span></li> -->
+            <li>Grocery <span>- Rs 1000</span></li>
           </ul>
         </div>
 
@@ -62,10 +129,13 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- <script src="script.js"></script> -->
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
+     <!-- <script src="app2.js"></script> -->
+     <script src="newScript.js"></script>
+      <!-- <script src="version2.js"></script> -->
   </body>
 </html>
